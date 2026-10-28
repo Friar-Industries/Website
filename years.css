@@ -120,6 +120,20 @@ OUTREACH BOXES
     padding: 20px;
 }
 
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;  
+    margin: 0 auto;
+}
+/* stack to one column on phones/small screens */
+@media (max-width: 700px) {
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+}
 .events-section {
     background-color: #fff;
     border: 1px solid #ddd;
